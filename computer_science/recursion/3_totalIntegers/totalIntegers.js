@@ -11,8 +11,6 @@ const totalIntegers = function (arr) {
   if (!Array.isArray(arr) && !isObj(arr)) return undefined;
   if (isObj(arr)) arrFromObj = Object.values(arr);
 
-  if (arrFromObj.length === 0) return 0;
-
   for (const item in arrFromObj) {
     if (Number.isInteger(arrFromObj[item])) {
       count += 1;
